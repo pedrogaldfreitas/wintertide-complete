@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: b5f1978f84fd4d1429336569d4ea2205
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - macheteSlashSound: {fileID: 8300000, guid: ed6023e88e459444eb311bb7a73872e8, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

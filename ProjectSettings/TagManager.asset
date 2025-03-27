@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - InteractObject
+  - PickUpObject
+  - Item
+  - MainGround
+  - PondIce
+  - IndoorGround
+  - SnowGround
+  - DirtGround
+  - ConcreteGround
+  - DestructibleByMachete
+  - Spot
+  - Boundary
+  - StatueActivation
+  - NextScene
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Skybox
+  - Ground
+  - Boundaries
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 2749820097
+    locked: 0
