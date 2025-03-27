@@ -8677,7 +8677,7 @@ PrefabInstance:
     - target: {fileID: 1419269246813957551, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: diag1
-      value: '[X to pick up highlighted object]'
+      value: '[E to pick up highlighted object]'
       objectReference: {fileID: 0}
     - target: {fileID: 1419269246813957551, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
@@ -8722,6 +8722,11 @@ PrefabInstance:
       propertyPath: diag9
       value: '[Press E to flip the switch]'
       objectReference: {fileID: 0}
+    - target: {fileID: 1419269246813957551, guid: b9105fa751d728849a40513c9f20fc67,
+        type: 3}
+      propertyPath: diag10
+      value: Got the Machete! [Q to switch between phone and machete]
+      objectReference: {fileID: 0}
     - target: {fileID: 1419269247466091785, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_RootOrder
@@ -8730,17 +8735,17 @@ PrefabInstance:
     - target: {fileID: 1419269247466091785, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 76.41
+      value: 22.1
       objectReference: {fileID: 0}
     - target: {fileID: 1419269247466091785, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.372
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 1419269247466091785, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.56
+      value: 135.64
       objectReference: {fileID: 0}
     - target: {fileID: 1419269247466091785, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
@@ -64450,6 +64455,21 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 3079174986712369332, guid: c8e9e561ca97bad4b8d132361653b167,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079174986712369332, guid: c8e9e561ca97bad4b8d132361653b167,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079174986712369332, guid: c8e9e561ca97bad4b8d132361653b167,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 61.16
+      objectReference: {fileID: 0}
     - target: {fileID: 3329421686326696342, guid: c8e9e561ca97bad4b8d132361653b167,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -82242,7 +82262,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 2eaf2eb2c66562e4e985485d23a16874,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.42
+      value: -0.24
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 2eaf2eb2c66562e4e985485d23a16874,
         type: 3}
