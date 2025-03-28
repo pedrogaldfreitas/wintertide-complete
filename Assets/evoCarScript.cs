@@ -7,7 +7,7 @@ public class evoCarScript : MonoBehaviour
 {
     bool flag = false;
 
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if (other.name == "Crosshair")
         {
@@ -21,6 +21,11 @@ public class evoCarScript : MonoBehaviour
                 }
             }
         }
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        EndGame();
     }
 
     void EndGame()

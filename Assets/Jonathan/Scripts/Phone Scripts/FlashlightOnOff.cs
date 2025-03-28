@@ -9,6 +9,7 @@ public class FlashlightOnOff : MonoBehaviour
     /// </summary>
     public bool activated;
     private Light flashlight;
+    public bool dimmerFlashlight;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +19,14 @@ public class FlashlightOnOff : MonoBehaviour
         //disables flashlight to begin with
         flashlight.enabled = false;
         activated = false;
+
+        //When inside the building, the flashlight shoudl be dimmer. It's too strong when outside.
+        if (dimmerFlashlight)
+        {
+            Light light = GetComponent<Light>();
+            light.range = 10;
+            light.intensity = 1f;
+        }
     }
 
     // Update is called once per frame

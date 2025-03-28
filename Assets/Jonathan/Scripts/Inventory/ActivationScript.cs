@@ -21,7 +21,7 @@ public class ActivationScript : MonoBehaviour
         {
             GameObject.Find("Inventory").GetComponent<Inventory>().newItem = 1;
             statue.SetActive(true);
-
+            CardPickupConsequences();
         }
         else if (this.gameObject.name.Equals("Machete(Item)"))
         {
@@ -30,5 +30,17 @@ public class ActivationScript : MonoBehaviour
         }
         //Debug.Log("Destroy");
         Destroy(this.gameObject);   
+    }
+
+    private void CardPickupConsequences()
+    {
+        //1. Door slamming sound (ONLY works when there is the third audio source, being the door slam sound.)
+        GameObject.Find("AmbienceSound").GetComponents<AudioSource>()[2].Play();
+
+        //2. Scary music (ONLY works when there is the second audio source, being the monolith music.)
+        GameObject.Find("AmbienceSound").GetComponents<AudioSource>()[1].Play();
+
+        //3. Text
+
     }
 }
