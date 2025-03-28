@@ -32,6 +32,7 @@ public class lightBoxScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 flicked = true;
+                GameObject.Find("HowManySwitchesLeft").GetComponent<howManySwitchesLeft>().ActivateOneMoreSwitch();
                 switchFlipAudio.Play();
                 otherLight.GetComponent<Light>().color = Color.green;
             }

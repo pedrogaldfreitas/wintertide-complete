@@ -16,13 +16,14 @@ public class cameraScript : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Application.targetFrameRate = 144;
     }
 
 
     void FixedUpdate()
     {
-        mouseX = Input.GetAxis("Mouse X")*mouseSensitivity*Time.deltaTime;
-        mouseY = Input.GetAxis("Mouse Y")*mouseSensitivity*Time.deltaTime;
+        mouseX = Input.GetAxisRaw("Mouse X")*mouseSensitivity*Time.deltaTime;
+        mouseY = Input.GetAxisRaw("Mouse Y")*mouseSensitivity*Time.deltaTime;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -70f, 70f);
