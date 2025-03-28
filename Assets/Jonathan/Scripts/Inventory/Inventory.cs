@@ -80,33 +80,6 @@ public class Inventory : MonoBehaviour
                     phone.active = true;
                 }
             }
-
-            /*
-            if (Input.GetKeyDown(KeyCode.Alpha1) && !itemCheck.Equals("Phone") && activeVerification[0])
-            {
-                //Pull out Phone
-                disableAllItems();
-                itemCheck = "Phone";
-                phone.active = true;
-            }
-
-            else if (Input.GetKeyDown(KeyCode.Alpha2) && !itemCheck.Equals("Card") && activeVerification[1])
-            {
-                //Pull out Card
-                disableAllItems();
-                itemCheck = "Card";
-                card.active = true;
-
-            }
-
-            else if (Input.GetKeyDown(KeyCode.Alpha3) && !itemCheck.Equals("Machete") && activeVerification[2])
-            {
-                //Pull out Machete
-                disableAllItems();
-                itemCheck = "Machete";
-                machete.active = true;
-
-            }*/
         }
 
         if (addToInventory)

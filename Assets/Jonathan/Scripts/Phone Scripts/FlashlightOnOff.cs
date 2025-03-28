@@ -24,8 +24,8 @@ public class FlashlightOnOff : MonoBehaviour
         if (dimmerFlashlight)
         {
             Light light = GetComponent<Light>();
-            light.range = 10;
-            light.intensity = 1f;
+            light.range = 15;
+            light.intensity = 1.5f;
         }
     }
 

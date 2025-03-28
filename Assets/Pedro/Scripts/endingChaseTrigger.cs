@@ -8,10 +8,12 @@ public class endingChaseTrigger : MonoBehaviour
     bool flag;
     [SerializeField]
     GameObject statue;
+    GameObject horrorSounds;
 
     private void Start()
     {
         flag = false;
+        horrorSounds = GameObject.Find("HorrorSounds");
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("parkingLot"))
         {
             statue.SetActive(false);
@@ -28,6 +30,9 @@ public class endingChaseTrigger : MonoBehaviour
                 statue.SetActive(true);
                 GameObject.Find("bigdoor").GetComponent<AudioSource>().Play();
                 statue.GetComponent<statueScript>().SpotPlayer();
+                horrorSounds.GetComponents<AudioSource>()[0].Play();
+                horrorSounds.GetComponents<AudioSource>()[1].Play();
+                horrorSounds.GetComponents<AudioSource>()[2].Play();
             }
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("quadrangleScene"))
             {

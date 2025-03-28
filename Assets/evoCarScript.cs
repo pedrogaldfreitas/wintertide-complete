@@ -5,24 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class evoCarScript : MonoBehaviour
 {
-    bool flag = false;
-
-    /*private void OnTriggerStay(Collider other)
-    {
-        if (other.name == "Crosshair")
-        {
-            if (GameObject.Find("Inventory").GetComponent<Inventory>().itemCheck == "Card")
-            {
-
-                if ((Input.GetKeyDown(KeyCode.Mouse0))||(Input.GetKeyDown(KeyCode.E)) && (flag == false))
-                {
-                    flag = true;
-                    EndGame();
-                }
-            }
-        }
-    }*/
-
     private void OnTriggerEnter(Collider other)
     {
         EndGame();
@@ -38,6 +20,9 @@ public class evoCarScript : MonoBehaviour
         GameObject.Find("StatueSoundEffect").GetComponent<AudioSource>().Stop();
         GameObject.Find("Statue").GetComponents<AudioSource>()[0].Stop();
         GameObject.Find("Statue").GetComponents<AudioSource>()[1].Stop();
+        GameObject.Find("HorrorSounds").GetComponents<AudioSource>()[0].Stop();
+        GameObject.Find("HorrorSounds").GetComponents<AudioSource>()[1].Stop();
+        GameObject.Find("HorrorSounds").GetComponents<AudioSource>()[2].Stop();
 
         GameObject.Find("AmbienceSound").GetComponent<AudioSource>().Stop();
 
