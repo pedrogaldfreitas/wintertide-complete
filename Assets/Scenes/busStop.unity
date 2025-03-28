@@ -29783,7 +29783,7 @@ PrefabInstance:
     - target: {fileID: 1419269246813957551, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: diag2
-      value: This, coupled with the fact that I overlept, meant that I was stuck
+      value: This, coupled with the fact that I fell asleep, meant that I was stuck
         alone on the mountain.
       objectReference: {fileID: 0}
     - target: {fileID: 1419269246813957551, guid: b9105fa751d728849a40513c9f20fc67,

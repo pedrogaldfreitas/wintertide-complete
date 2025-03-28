@@ -19,7 +19,7 @@ public class menucutsene : MonoBehaviour
     {
         title.GetComponent<TMP_Text>().color -= new Color(0f, 0f, 0f, 1f);
         //title.GetComponent<SpriteRenderer>().color -= new Color(0f, 0f, 0f, 1f);
-        sfu.GetComponent<SpriteRenderer>().color -= new Color(0f, 0f, 0f, 1f);
+        sfu.GetComponent<Image>().color -= new Color(0f, 0f, 0f, 1f);
         //ournames.GetComponent<SpriteRenderer>().color -= new Color(0f, 0f, 0f, 1f);
         ournames.GetComponent<TMP_Text>().color -= new Color(0f, 0f, 0f, 1f);
         playbutton.GetComponent<TMP_Text>().color -= new Color(0f, 0f, 0f, 1f);
@@ -71,10 +71,10 @@ public class menucutsene : MonoBehaviour
     {
         for (float i = 0f; i <= 1f; i += 0.007f)
         {
-            obj.GetComponent<SpriteRenderer>().color = new Color(obj.GetComponent<SpriteRenderer>().color.r, obj.GetComponent<SpriteRenderer>().color.g, obj.GetComponent<SpriteRenderer>().color.b, i);
+            obj.GetComponent<Image>().color = new Color(obj.GetComponent<Image>().color.r, obj.GetComponent<Image>().color.g, obj.GetComponent<Image>().color.b, i);
             yield return new WaitForSeconds(0.01f);
         }
-        obj.GetComponent<SpriteRenderer>().color = new Color(obj.GetComponent<SpriteRenderer>().color.r, obj.GetComponent<SpriteRenderer>().color.g, obj.GetComponent<SpriteRenderer>().color.b, 1f);
+        obj.GetComponent<Image>().color = new Color(obj.GetComponent<Image>().color.r, obj.GetComponent<Image>().color.g, obj.GetComponent<Image>().color.b, 1f);
     }
 
     IEnumerator wait(float time)

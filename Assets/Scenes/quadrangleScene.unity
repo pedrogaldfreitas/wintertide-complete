@@ -8633,11 +8633,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1419269246732883561, guid: b9105fa751d728849a40513c9f20fc67,
-        type: 3}
-      propertyPath: mouseSensitivity
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 1419269246732883567, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_AllowMSAA
@@ -9138,6 +9133,7 @@ PrefabInstance:
     - {fileID: 4220201530158885085, guid: b9105fa751d728849a40513c9f20fc67, type: 3}
     - {fileID: 3014609033251964575, guid: b9105fa751d728849a40513c9f20fc67, type: 3}
     - {fileID: 291140335081293208, guid: b9105fa751d728849a40513c9f20fc67, type: 3}
+    - {fileID: 4405799025470534519, guid: b9105fa751d728849a40513c9f20fc67, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b9105fa751d728849a40513c9f20fc67, type: 3}
 --- !u!1 &182789155 stripped
 GameObject:
