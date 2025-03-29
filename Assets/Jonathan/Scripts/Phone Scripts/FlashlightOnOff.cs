@@ -16,9 +16,8 @@ public class FlashlightOnOff : MonoBehaviour
     {
         flashlight = this.gameObject.GetComponent<Light>();
 
-        //disables flashlight to begin with
-        flashlight.enabled = false;
-        activated = false;
+        flashlight.enabled = true;
+        activated = true;
 
         //When inside the building, the flashlight shoudl be dimmer. It's too strong when outside.
         if (dimmerFlashlight)

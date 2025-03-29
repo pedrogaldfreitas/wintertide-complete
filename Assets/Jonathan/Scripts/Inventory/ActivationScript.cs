@@ -26,7 +26,7 @@ public class ActivationScript : MonoBehaviour
         else if (this.gameObject.name.Equals("Machete(Item)"))
         {
             GameObject.Find("Inventory").GetComponent<Inventory>().newItem = 2;
-            StartCoroutine(GameObject.Find("Crosshair").GetComponent<objectInteraction>().DisplayDiagLong("diag10"));
+            GameObject.Find("Crosshair").GetComponent<objectInteraction>().MachetePickupDiag();
         }
         //Debug.Log("Destroy");
         Destroy(this.gameObject);   

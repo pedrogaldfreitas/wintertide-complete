@@ -92,11 +92,10 @@ public class objectInteraction : MonoBehaviour
     //Use this to display dialogue.
     public IEnumerator DisplayDiag(string diag)
     {
-        Debug.Log("PEDROLOG: displayDiag called for " + diag);
         diagActive = true;
         diagText.GetComponent<Text>().text = diagText.GetComponent<AllDiagOptions>().GetProperDiagOption(diag);
         StartCoroutine(FadeInDiag());
-        yield return wait(5f);
+        yield return new WaitForSeconds(5f);
         diagActive = false;
         StartCoroutine(FadeOutDiag());
     }
@@ -106,7 +105,7 @@ public class objectInteraction : MonoBehaviour
         diagActive = true;
         diagText.GetComponent<Text>().text = diagText.GetComponent<AllDiagOptions>().GetProperDiagOption(diag);
         yield return StartCoroutine(FadeInDiag());
-        yield return wait(10f);
+        yield return new WaitForSeconds(8f);
         diagActive = false;
         yield return StartCoroutine(FadeOutDiag());
     }
@@ -131,9 +130,13 @@ public class objectInteraction : MonoBehaviour
         diagText.GetComponent<Text>().color = new Color(222f, 222f, 222f, 222f);
     }
 
-    IEnumerator wait(float timeInSeconds)
+    public void MachetePickupDiag()
     {
-        yield return new WaitForSeconds(timeInSeconds);
+        StartCoroutine(DisplayDiag("diag10"));
     }
 
+    public void BushDiag()
+    {
+        StartCoroutine(DisplayDiag("diag8"));
+    }
 }

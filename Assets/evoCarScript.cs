@@ -40,7 +40,7 @@ public class evoCarScript : MonoBehaviour
         yield return StartCoroutine(GameObject.Find("Crosshair").GetComponent<objectInteraction>().DisplayDiagLong("diag4"));
         yield return StartCoroutine(GameObject.Find("Crosshair").GetComponent<objectInteraction>().DisplayDiagLong("diag5"));
         yield return StartCoroutine(GameObject.Find("Crosshair").GetComponent<objectInteraction>().DisplayDiagLong("diag6"));
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(4f);
 
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;

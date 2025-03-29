@@ -52,17 +52,4 @@ public class OnLoadScene : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            QuitGame();
-        }
-    }
-
-    void QuitGame()
-    {
-        Application.Quit();
-    }
-
 }

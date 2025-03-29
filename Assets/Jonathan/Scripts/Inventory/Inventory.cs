@@ -36,6 +36,7 @@ public class Inventory : MonoBehaviour
         _isSprinting = this.gameObject.GetComponentInParent<playerMovement>().isSprinting;
 
         ///This is used for determining when an obj is being picked up
+        /*
         if (itemPickedUp || _isSprinting)
         {
             disableAllItems();
@@ -56,7 +57,7 @@ public class Inventory : MonoBehaviour
                 machete.active = true;
             }
 
-        }
+        }*/
         //This is used for checking when the machete is attacking
         if ((activeVerification[2]) && (itemCheck.Equals("Machete")))//CHANGE THE 0 TO 2 AFTER YOU'RE DONE TESTING!!!
         {

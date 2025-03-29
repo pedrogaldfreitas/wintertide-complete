@@ -123,6 +123,113 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &71617387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 71617388}
+  - component: {fileID: 71617391}
+  - component: {fileID: 71617390}
+  - component: {fileID: 71617389}
+  m_Layer: 2
+  m_Name: QuitText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &71617388
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71617387}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 507288736}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0.000061035156, y: -45.75006}
+  m_SizeDelta: {x: 500, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &71617389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71617387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df68c72d6d0bed649ac1da32342475ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  diag0: There's no reason to go back.
+  diag1: '[E to pick up highlighted object]'
+  diag2: I better stay back, I don't wanna catch a disease.
+  diag3: There seems to be something on top of that scaffolding. Perhaps I can throw
+    something to knock it down...
+  diag4: Door's locked. If I can turn on the power, it should open.
+  diag5: (Click while holding object to throw)
+  diag6: This ice is too thin to walk across.
+  diag7: According to the map, I should be at the green point. But what are those
+    other markings?
+  diag8: These weeds are blocking the way to the study hall. If only I had something
+    to cut it...
+  diag9: '[Press E to flip the switch]'
+  diag10: Got the Machete! [Q to switch between phone and machete]
+--- !u!114 &71617390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71617387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 7aee40771b59c9d44b0f78888e2b2f40, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Chicken out? [Esc]
+--- !u!222 &71617391
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71617387}
+  m_CullTransparentMesh: 0
 --- !u!1 &207301295
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +454,7 @@ RectTransform:
   - {fileID: 1243277181}
   - {fileID: 712650097}
   - {fileID: 1372710466}
+  - {fileID: 71617388}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6489,3 +6597,72 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!1001 &2128305027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3684715280429482808, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_Name
+      value: QuitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.19313
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 33.358143
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 130.12999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684715280429482814, guid: 54bf3861b0747e743b139bc9041829b1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 54bf3861b0747e743b139bc9041829b1, type: 3}

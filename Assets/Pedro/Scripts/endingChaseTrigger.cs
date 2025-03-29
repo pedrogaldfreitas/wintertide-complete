@@ -29,7 +29,6 @@ public class endingChaseTrigger : MonoBehaviour
                 flag = true;
                 statue.SetActive(true);
                 GameObject.Find("bigdoor").GetComponent<AudioSource>().Play();
-                statue.GetComponent<statueScript>().SpotPlayer();
                 horrorSounds.GetComponents<AudioSource>()[0].Play();
                 horrorSounds.GetComponents<AudioSource>()[1].Play();
                 horrorSounds.GetComponents<AudioSource>()[2].Play();

@@ -46,6 +46,10 @@ public class statueScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("parkingLot"))
+        {
+            SpotPlayer();
+        }
 
         if (Vector3.Distance(transform.position, player.transform.position) < 2) {
             SceneManager.LoadScene("Jumpscare");
@@ -98,7 +102,7 @@ public class statueScript : MonoBehaviour
             transform.LookAt(player.transform);
             if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("parkingLot"))
             {
-                rb.MovePosition(transform.position + transform.forward * Time.deltaTime * 8f);
+                rb.MovePosition(transform.position + transform.forward * Time.deltaTime * 9f);
                 //transform.position += transform.forward * Time.deltaTime * 8;
 
             } else if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("BuildingMaze"))

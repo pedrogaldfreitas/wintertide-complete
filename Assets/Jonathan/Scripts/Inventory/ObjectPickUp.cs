@@ -18,11 +18,7 @@ public class ObjectPickUp : MonoBehaviour
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         if (!Physics.SphereCast(ray, radius, out hit, reachRange) || !hit.collider.CompareTag("Item")) return;
-        Debug.Log("Name of object" + hit.collider.name);
         hit.collider.gameObject.GetComponent<ActivationScript>().enabled = true;
-
-        Debug.Log("item is here");
-
     }
 
     private void OnDrawGizmosSelected()

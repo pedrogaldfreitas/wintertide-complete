@@ -3687,7 +3687,7 @@ PrefabInstance:
     - target: {fileID: 580343947324728167, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 635918319935214187, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
@@ -3712,7 +3712,7 @@ PrefabInstance:
     - target: {fileID: 1419269246732883561, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}
       propertyPath: mouseSensitivity
-      value: 150
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1419269246732883565, guid: b9105fa751d728849a40513c9f20fc67,
         type: 3}

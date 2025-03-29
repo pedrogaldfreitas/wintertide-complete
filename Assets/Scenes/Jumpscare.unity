@@ -971,11 +971,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d84e9c88d19f1d34ea783ed428093ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint1: 'Hint: Turn off your flashlight to avoid being seen.'
+  hint1: 'Hint: Your flashlight makes it easier for you to be seen.'
   hint2: 'Hint: Keep your volume up to listen for the statue.'
   hint3: 'Hint: Hide behind something.'
   hint4: 'Hint: Press E to interact with objects.'
-  hint5: 'Hint: Press X to pick up a highlighted object, and click to throw it.'
+  hint5: 'Hint: Highlighted objects can be picked up and thrown with [E] and Left
+    Click, respectively.'
 --- !u!114 &1906282287
 MonoBehaviour:
   m_ObjectHideFlags: 0

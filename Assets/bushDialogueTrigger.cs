@@ -10,7 +10,7 @@ public class bushDialogueTrigger : MonoBehaviour
         if ((other.tag == "Player")&&(flag == false))
         {
             flag = true;
-            StartCoroutine(GameObject.Find("Crosshair").GetComponent<objectInteraction>().DisplayDiagLong("diag8"));
+            GameObject.Find("Crosshair").GetComponent<objectInteraction>().BushDiag();
         }
     }
 }

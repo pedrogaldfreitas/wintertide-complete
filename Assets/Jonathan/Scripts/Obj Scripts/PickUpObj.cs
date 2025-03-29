@@ -138,7 +138,6 @@ public class PickUpObj : MonoBehaviour
             //.DrawRay(ray.origin, ray.direction * reachRange, Color.red);
             if(Physics.Raycast(ray, out hit, reachRange)) 
             {
-                //Debug.Log(hit.collider.name);
                 if (hit.collider.tag == "PickUpObject")
                 {
                     // ************* PEDRO CODE *******************

@@ -5351,7 +5351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1419269247466091785}
-  mouseSensitivity: 130
+  mouseSensitivity: 100
 --- !u!114 &54115148957843680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5627,7 +5627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0323747743ae0ae4bb5507ce503569ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bushhitclip: {fileID: 0}
+  bushhitclip: {fileID: 8300000, guid: ac40fb13fea743544806db9caed5ffa1, type: 3}
 --- !u!1 &1419269247466091789
 GameObject:
   m_ObjectHideFlags: 0
@@ -20806,6 +20806,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 434d029ea1b04014ea99f6096823631c, type: 2}
+    - target: {fileID: 2324323874585278221, guid: 77b37af5d841acf4f910b37c3d9f8873,
+        type: 3}
+      propertyPath: activated
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2631784960835033247, guid: 77b37af5d841acf4f910b37c3d9f8873,
         type: 3}
       propertyPath: m_LightProbeUsage
